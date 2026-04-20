@@ -50,9 +50,9 @@ function Run(self, units, parameter)
 	for posIndex, unitID in pairs(kittens) do
 		if true then
 			local thisUnitWantedPosition = kittenPositions[posIndex]
-			Spring.Echo("[MoveCats] position for posIndex=" .. tostring(posIndex) .. " unitID=" .. tostring(unitID))
+			--Spring.Echo("[MoveCats] position for posIndex=" .. tostring(posIndex) .. " unitID=" .. tostring(unitID))
 			if not thisUnitWantedPosition then
-				Spring.Echo("[MoveCats] nil position for posIndex=" .. tostring(posIndex) .. " unitID=" .. tostring(unitID))
+				--Spring.Echo("[MoveCats] nil position for posIndex=" .. tostring(posIndex) .. " unitID=" .. tostring(unitID))
 			else
 				SpringGiveOrderToUnit(unitID, cmdID, thisUnitWantedPosition:AsSpringVector(), {})
 			end
