@@ -31,8 +31,8 @@ return function(Wx, Wy, Wz, Cat, Spacing)
 	local cz = 0 
 	if #Cat > 0 then
 		cx,cy,cz = Spring.GetUnitPosition(Cat[1])
-		if (Script.LuaUI('PURRFECTWIDGET')) then
-			Script.LuaUI.PURRFECTWIDGET(
+		if (Script.LuaUI('exampleDebug_update')) then
+			Script.LuaUI.exampleDebug_update(
 				ID, -- keyS
 				{	-- data
 					startPos = Vec3(cx, cy, cz), 
@@ -41,7 +41,7 @@ return function(Wx, Wy, Wz, Cat, Spacing)
 			)
 			ID = ID+1
 			
-            Script.LuaUI.PURRFECTWIDGET(
+            Script.LuaUI.exampleDebug_update(
 				ID, -- keyS
 				{	-- data
 					startPos = Vec3(cx, cy, cz), 
@@ -63,8 +63,8 @@ return function(Wx, Wy, Wz, Cat, Spacing)
         local plus = 10
 
 		local x,y,z = Spring.GetUnitPosition(kitten1)
-		if (Script.LuaUI('PURRFECTWIDGET')) then
-			Script.LuaUI.PURRFECTWIDGET(
+		if (Script.LuaUI('exampleDebug_update')) then
+			Script.LuaUI.exampleDebug_update(
 				ID, -- keyS
 				{	-- data
 					startPos = Vec3(cx, cy, cz), 
@@ -73,7 +73,7 @@ return function(Wx, Wy, Wz, Cat, Spacing)
 			)
 			ID = ID+1
 
-			Script.LuaUI.PURRFECTWIDGET(
+			Script.LuaUI.exampleDebug_update(
 				ID, -- key
 				{	-- data
 					startPos = Vec3(cx, cy, cz), 
